@@ -1,0 +1,55 @@
+
+                        <!-- begin jumbotron div -->
+                        <div class="jumbotron">
+            <p class="lead">Sign up for text alerts on the products you want</p>
+                        <p class="lead">We'll let you know when it is in stock!</p>
+                        </div>
+                        <!-- end jumbotron div -->
+
+                        <!-- begin panel div -->
+                        <div class="panel panel-default">
+                        <div class="panel-heading">Retailers</div>
+
+                        <div class="panel-body">
+                        <a href="http://www.ikea.com/us/en/" target="_blank"><img src="images/ikea.gif"></a>
+                        </div>
+                        </div>
+                        <!-- end panel div -->
+
+                <form>
+            <fieldset class="form-group">
+            <label for="select-store">Retailer</label>
+            <select class="form-control" id="select-store" name="retailer_id">
+                </select>
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                        <label for="select-location">Store Location</label>
+            <select class="form-control" id="select-location" name="location_id">
+                        <option label=" "></option>
+            </select>
+            </fieldset>
+
+            <fieldset class="form-group has-feedback">
+                <label for="input-productnumber">Product Number</label>
+                <input class="form-control" id="input-productnumber" name="product_number"
+                placeholder="From retailer website" type="text">
+                                <span class="form-control-feedback" id="input-productnumber"></span>
+            </fieldset>
+
+
+            <fieldset class="form-group has-feedback">
+                <label for="input-phone">Mobile Number</label>
+                                <input class="form-control" id="input-phone" placeholder="1-xxx-xxx-xxxx" name="phone"
+                type="tel">
+                                <span class="form-control-feedback" id="input-phone"></span>
+            </fieldset>
+            <button class="btn btn-primary" id="btn-signup" type="submit">Submit</button>
+                </form>
+
+                <div class="row marketing">
+            <small>* Message and data rates may apply.</small>
+                </div>
+
+
+

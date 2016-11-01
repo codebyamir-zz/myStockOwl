@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Real-time alerts about store products in stock">
+    <meta content="" name="author">
+    <link href="images/favicon.ico" rel="icon">
+
+    <title>myStockOwl | Know when your product is in stock!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- begin container div -->
+    <div class="container">
+
+        <!-- begin header div -->
+        <div class="header clearfix">
+        <a href="#" class="pull-left"><img class=hidden-xs src="images/owl48x48.png"></a>
+        <nav>
+			<ul class="nav nav-pills pull-right">
+				<li role="presentation" class="active"><a id="main" href="/">Home</a></li>
+				<li role="presentation"><a id="faq" href="faq.html">FAQ</a></li>
+			</ul>
+      		</nav>
+
+        <h3 class="text-muted">myStockOwl</h3>
+        </div>
+        <!-- end header div -->
+
+		<!-- begin content div -->
+		<div id="content">
+      <!-- begin jumbotron div -->
+                        <div class="jumbotron">
+            <p class="lead">Sign up for text alerts on the products you want</p>
+                        <p class="lead">We'll let you know when it is in stock!</p>
+                        <!-- <img src="images/appstore.svg" /> -->
+						</div>
+                        <!-- end jumbotron div -->
+
+                        <!-- begin panel div -->
+                        <div class="panel panel-default">
+                        <div class="panel-heading">Retailers</div>
+
+                        <div class="panel-body">
+                        <a href="http://www.ikea.com/us/en/" target="_blank"><img src="images/ikea.gif"></a>
+                        </div>
+                        </div>
+                        <!-- end panel div -->
+
+                <form>
+            <fieldset class="form-group">
+            <label for="select-store">Retailer</label>
+            <select class="form-control" id="select-store" name="retailer_id">
+                </select>
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                        <label for="select-location">Store Location</label>
+            <select class="form-control" id="select-location" name="location_id">
+                        <option label=" "></option>
+            </select>
+            </fieldset>
+
+            <fieldset class="form-group has-feedback">
+                <label for="input-productnumber">Product Number</label>
+                <input class="form-control" id="input-productnumber" name="product_number"
+                placeholder="From retailer website" type="text">
+                                <span class="form-control-feedback" id="input-productnumber"></span>
+            </fieldset>
+
+
+            <fieldset class="form-group has-feedback">
+                <label for="input-phone">Mobile Number</label>
+                                <input class="form-control" id="input-phone" placeholder="1-xxx-xxx-xxxx" name="phone"
+                type="tel">
+                                <span class="form-control-feedback" id="input-phone"></span>
+            </fieldset>
+            <button class="btn btn-primary" id="btn-signup" type="submit">Submit</button>
+                </form>
+
+                <div class="row marketing">
+            <small>* Message and data rates may apply.</small>
+                </div>
+
+		</div>
+		<!-- end content div -->
+
+        <footer class="footer"></footer>
+    </div>
+    <!-- /container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script> 
+   
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script> 
+
+	<!-- JS Validation -->
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.min.js"></script>
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+    <script src="js/ie10-viewport-bug-workaround.js"></script> 
+   
+	<script src="js/site.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

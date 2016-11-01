@@ -1,0 +1,10 @@
+{
+    "require": {
+        "slim/slim": "^3.0",
+        "twbs/bootstrap": "^3.3",
+        "aws/aws-sdk-php": "^3.18",
+        "chrisbarr/amazon-sns-php-api": "^1.2",
+        "monolog/monolog": "^1.19",
+        "twilio/sdk": "^4.10"
+    }
+}
